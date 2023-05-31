@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Typed from 'react-typed'
+import heroimage from '../assets/HomePage.png'
 
 const Hero = () => {
   return (
@@ -32,7 +33,7 @@ const Hero = () => {
           </div>
           <div className='mobile:mt-10'>
             <img
-              src='/src/assets/HomePage.png'
+              src={heroimage}
               alt='hero'
               className='Sdesktop:w-[450px] mobile:w-[300px]'
             />
