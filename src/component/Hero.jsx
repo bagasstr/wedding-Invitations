@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div id='fitur' className='w-full'>
       <div className='containers py-10 mobile:py-5 mobile:mx-4 tablet:mx-6'>
-        <div className='flex justify-between items-center mobile:flex-col'>
+        <div className='flex justify-between items-center mobile:flex-col tablet:flex-col'>
           <div className='Sdesktop:w-[30rem] mobile:w-full'>
             <h3 className='font-medium text-xl mobile:font-medium mobile:text-base text-black/70 mb-3'>
               Buat Hari Spesial Makin Spesial
@@ -35,7 +35,7 @@ const Hero = () => {
             <img
               src={heroimage}
               alt='hero'
-              className='Sdesktop:w-[450px] mobile:w-[300px]'
+              className='Sdesktop:w-[450px] tablet:w-[350px] mobile:w-[300px]'
             />
           </div>
         </div>
