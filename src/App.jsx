@@ -1,11 +1,10 @@
-import Navbar from './component/Navbar'
+import Navbar from './component/navbar/Navbar'
 import Home from './pages/Home'
 import Router from './router/Router'
 
 const App = () => {
   return (
-    <div className=''>
-      <Navbar />
+    <div className='notSupport:hidden'>
       <Router />
     </div>
   )

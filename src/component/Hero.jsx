@@ -4,7 +4,10 @@ import heroimage from '../assets/HomePage.png'
 
 const Hero = () => {
   return (
-    <div id='fitur' className='w-full'>
+    <div
+      id='home'
+      className='w-full Sdesktop:pb-24 Sdesktop:pt-36 mobile:pt-20 top-0'
+    >
       <div className='containers py-10 mobile:py-5 mobile:mx-4 tablet:mx-6'>
         <div className='flex justify-between items-center mobile:flex-col tablet:flex-col'>
           <div className='Sdesktop:w-[30rem] mobile:w-full'>

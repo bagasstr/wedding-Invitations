@@ -1,15 +1,15 @@
 import { Link, NavLink } from 'react-router-dom'
-import { dataNavLink } from '../data/data'
+import { dataNavLink } from '../../data/data'
 import { HiMenu } from 'react-icons/hi'
 import { useState } from 'react'
-import logo from '../assets/image/img.svg'
+import logo from '../../assets/image/img.svg'
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false)
 
   return (
-    <div className='w-full '>
-      <div className='containers py-7 mobile:mx-4 tablet:mx-6'>
+    <div className='w-full fixed top-0'>
+      <div className='containers py-7  mobile:mx-4 tablet:mx-6'>
         <div className='flex Sdesktop:items-center justify-between'>
           <img src={logo} alt='logo' className='w-[200px] mobile:w-[150px]' />
           <nav className='flex items-center'>
@@ -31,9 +31,7 @@ const Navbar = () => {
                     key={index}
                     className='list hover:text-accent text-lg font-normal text-black/75 mobile:space-y-3 mobile:my-3 tablet:my-4'
                   >
-                    <Link to={result.path} className='links'>
-                      {result.name}
-                    </Link>
+                    <a href={result.path}>{result.name}</a>
                   </li>
                 ))}
                 <button
