@@ -4,7 +4,7 @@ import Router from './router/Router'
 
 const App = () => {
   return (
-    <div className='notSupport:hidden'>
+    <div className=''>
       <Navbar />
       <Router />
     </div>
