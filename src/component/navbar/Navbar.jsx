@@ -19,9 +19,9 @@ const Navbar = () => {
             >
               <HiMenu />
             </div>
-            <ul className=''>
+            <ul className='bg-bg'>
               <div
-                className={`transition-all ease-in-out duration-200 mobile:absolute mobile:mt-10 mobile:bg-bg mobile:w-full mobile:p-4 tablet:absolute Sdesktop:flex Sdesktop:gap-x-9 Sdesktop:items-center  tablet:mt-10 tablet:bg-bg tablet:w-full tablet:p-5 mobile:h-full tablet:h-full z-10 ${
+                className={`transition-all ease-in-out duration-200 mobile:absolute mobile:mt-10 mobile:bg-bg mobile:w-full mobile:p-4 tablet:absolute Sdesktop:flex Sdesktop:gap-x-9 Sdesktop:items-center tablet:mt-10 tablet:bg-bg tablet:w-full tablet:p-5 z-20 ${
                   menu ? 'right-0' : 'right-[-1000px]' /*  && 'hidden' */
                 }`}
               >
