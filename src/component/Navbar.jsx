@@ -8,7 +8,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false)
 
   return (
-    <div className='w-full'>
+    <div className='w-full '>
       <div className='containers py-7 mobile:mx-4 tablet:mx-6'>
         <div className='flex Sdesktop:items-center justify-between'>
           <img src={logo} alt='logo' className='w-[200px] mobile:w-[150px]' />
@@ -21,7 +21,7 @@ const Navbar = () => {
             </div>
             <ul className=''>
               <div
-                className={`transition-all ease-in-out duration-200 mobile:absolute mobile:mt-10 mobile:bg-bg mobile:w-full mobile:p-4  Sdesktop:flex Sdesktop:gap-x-9 Sdesktop:items-center tablet:absolute tablet:mt-10 tablet:bg-bg tablet:w-full tablet:p-5 mobile:h-full tablet:h-full overflow-hidden ${
+                className={`transition-all ease-in-out duration-200 absolute mobile:mt-10 mobile:bg-bg mobile:w-full mobile:p-4  Sdesktop:flex Sdesktop:gap-x-9 Sdesktop:items-center  tablet:mt-10 tablet:bg-bg tablet:w-full tablet:p-5 mobile:h-full tablet:h-full z-10 ${
                   menu ? 'right-0' : 'right-[-1000px]' /*  && 'hidden' */
                 }`}
               >

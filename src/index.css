@@ -4,7 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
 body {
   overflow-x: hidden;
 }
@@ -12,7 +11,6 @@ body {
 @layer base {
   html {
     font-family: Poppins;
-    overflow-x: hidden;
   }
 }
 
