@@ -27,6 +27,7 @@ const Navbar = () => {
               >
                 {dataNavLink.map((result, index) => (
                   <li
+                    onClick={() => setMenu((prev) => !prev)}
                     key={index}
                     className='list hover:text-accent text-lg font-normal text-black/75 mobile:space-y-3 mobile:my-3 tablet:my-4'
                   >
@@ -35,7 +36,10 @@ const Navbar = () => {
                     </Link>
                   </li>
                 ))}
-                <button className='hover:bg-text Sdesktop:font-medium px-5 py-3 mobile:mt-4 tablet:mt-4 rounded-md text-bg bg-accent'>
+                <button
+                  onClick={() => setMenu((prev) => !prev)}
+                  className='hover:bg-text Sdesktop:font-medium px-5 py-3 mobile:mt-4 tablet:mt-4 rounded-md text-bg bg-accent'
+                >
                   <Link to={'/order'}>Order Sekarang</Link>
                 </button>
               </div>
