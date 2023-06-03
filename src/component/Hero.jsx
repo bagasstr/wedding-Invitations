@@ -8,7 +8,7 @@ const Hero = () => {
       id='home'
       className='w-full Sdesktop:pb-24 Sdesktop:pt-44 bg-primary h-screen mobile:pt-20 top-0'
     >
-      <div className='containers py-10 mobile:py-5 '>
+      <div className='containers py-10 mobile:py-5 mobile:mx-4 tablet:mx-6 '>
         <div className='flex justify-between items-center mobile:flex-col tablet:flex-col'>
           <div className='Sdesktop:w-[30rem] mobile:w-full'>
             <h3 className='font-medium text-xl mobile:font-medium mobile:text-base text-black/70 mb-3'>

@@ -4,12 +4,12 @@ import { BiCheck } from 'react-icons/bi'
 
 const PaketDetail = () => {
   return (
-    <div className='pt-[4rem]'>
-      <div className=''>
-        <div className='grid mobile:grid-cols-1 Sdesktop:grid-cols-3'>
+    <div className='Sdesktop:pt-[4rem] mobile:mt-[2rem] mobile:max-w-[400px] tablet:max-w-[30rem] mx-auto'>
+      <div className='containers mobile:mx-4 tablet:mx-6'>
+        <div className='grid mobile:grid-cols-1 mobile:justify-center Sdesktop:grid-cols-3'>
           {dataPaket.map((result, idx) => (
             <div key={idx} className=''>
-              <div className='p-5 bg-accent mx-3 rounded-lg shadow-md'>
+              <div className='p-5 bg-accent mx-3 rounded-lg shadow-md my-5'>
                 <div className='text-center'>
                   <h1 className='font-bold text-lg text-bg/90'>
                     {result.title}
@@ -19,7 +19,7 @@ const PaketDetail = () => {
                   </h1>
                 </div>
                 {result.description.map((results, index) => (
-                  <div className='flex my-3' key={index}>
+                  <div className='flex' key={index}>
                     <div className='mr-2'>
                       <BiCheck className='text-[23px] text-bg' />
                     </div>
