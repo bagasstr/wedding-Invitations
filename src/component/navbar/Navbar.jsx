@@ -8,7 +8,7 @@ const Navbar = () => {
   const [menu, setMenu] = useState(false)
 
   return (
-    <div className='w-full fixed top-0 bg-primary'>
+    <div className='w-full fixed top-0 bg-primary shadow-md'>
       <div className='containers py-7  mobile:mx-4 tablet:mx-6'>
         <div className='flex Sdesktop:items-center justify-between'>
           <img src={logo} alt='logo' className='w-[200px] mobile:w-[150px]' />
