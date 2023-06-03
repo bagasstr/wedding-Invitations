@@ -11,9 +11,9 @@ const Home = () => {
       <Navbar />
       <Hero />
       <Katalog />
+      <Paket />
       <Fitur />
       <Faq />
-      <Paket />
     </>
   )
 }
